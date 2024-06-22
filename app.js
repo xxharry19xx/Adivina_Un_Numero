@@ -1,11 +1,3 @@
-/* // sirve para seleccionar etiquetas document.querySelector('h1')
-let titulo = document.querySelector('h1');
-// insertamos un texto a la etiqueta de h1 mediante el innerHTML
-titulo.innerHTML = 'Adivina el numero perro';
-
-let parrafo = document.querySelector('p');
-parrafo.innerHTML = 'Ingresa un numero del 1 al 10'; */
-
 let numeroSecreto = generarNumeroSecreto();
 let intentos = 1;
 let litaNumerosSorteados = [];
@@ -19,18 +11,7 @@ function asignarTextoElemento(elemento, texto) {
 
 function generarNumeroSecreto() {
   return Math.floor(Math.random()*10) + 1;
-  // let numeroGenerado = Math.floor(Math.random() * 10) + 1;
-  // // si el numero generdo esta en la lista 
-  // if (litaNumerosSorteados.includes(numeroGenerado)){
-    
-  //   return generarNumeroSecreto();
-  // }else{
-  //   litaNumerosSorteados.push(numeroGenerado);
-  // }
 }
-
-// asignarTextoElemento("h1", "Adivina el numero secreto!!");
-// asignarTextoElemento("p", "Ingresa un numero del 1 al 10");
 
 // creamos una funcion llamada intentoUsuario
 
@@ -84,86 +65,3 @@ function reiniciarJuego() {
   condicionesIniciales();
   document.getElementById('reiniciar').setAttribute('disabled', 'true');
 }
-
-/* function mandarMensaje(){
-    console.log('hola mundo');
-}
-mandarMensaje(); */
-
-/* function recibirNombre(nombre){
-    console.log(`hola, [${nombre}]`);
-}
-
-recibirNombre('Harry'); */
-
-/* function dobleNumero(numero){
-    console.log((numero * 2));
-}
-
-dobleNumero(15); */
-
-/* function promedio(nro1,nro2,nro3){
-    // console.log((nro1+nro2+nro3)/3);
-    let promedio = (nro1 + nro2 + nro3) / 3 ;
-    console.log(promedio);
-    return promedio;
-}
-promedio(10,12,5); */
-
-/* function numeroMayor(num1 , num2){
-    if (num1 > num2){
-        return num1;
-    }else{
-        return num2;
-    }
-}
-
-let resultado = numeroMayor(7,10);
-console.log(resultado); */
-
-/* function numeroMultiplicado(num1){
-    let rpta = Math.pow(num1,2)
-    return rpta;
-}
-
-let res = numeroMultiplicado(7);
-console.log(res); */
-
-/* function calcularIMC(peso,altura){
-    let imc = peso / Math.pow(altura,2);
-    return imc;
-}
-
-let rpta = calcularIMC(80,1.75);
-console.log(rpta); */
-
-/* function factorial(n){
-    let rpta = 1;
-
-    for (let i = 1; i <= n; i++) {
-        rpta *= i;
-    }
-    return rpta;
-}
-
-let res = factorial(5);
-console.log(res); */
-
-/* function tasaDeCambio(dolares){
-    const cambio = 4.80;
-    let reales = dolares * cambio;
-    return reales;
-}
-let moneda = 500;
-let vaclorReales = tasaDeCambio(moneda);
-console.log(`${moneda}$ dolares son equivales a R$${vaclorReales}`); */
-
-/* function multiplicar(n){
-
-    for (let i = 1; i <= 10; i++) {
-        let rpta = n * i;
-        console.log(`${n} * ${i} = ${rpta}`);
-    }
-}
-
-multiplicar(5); */
